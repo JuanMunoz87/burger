@@ -32,7 +32,7 @@ function objToSql(ob) {
 //-----------------------------
 var orm ={
    selectAll: function(table, cb){
-      var dbQuery = 'SELECT * FROM' + table + ";";
+      var dbQuery = 'SELECT * FROM ' + table + ";";
 
       connection.query(dbQuery, function(err, res){
          if (err){
